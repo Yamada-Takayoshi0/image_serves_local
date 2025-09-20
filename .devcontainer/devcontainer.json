@@ -1,0 +1,37 @@
+{
+  "name": "image_serves",
+  "workspaceFolder": "/var/www/html",
+  "dockerComposeFile": [
+    "../compose.yml"
+  ],
+  "service": "app",
+  "settings": {
+    "php.validate.enable": false,
+    "php.suggest.basic": false,
+    "[php]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true,
+      "**/vendor/*/**": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "eamodio.gitlens",
+        "Vue.volar",
+        "dbaeumer.vscode-eslint",
+        "task.vscode-task",
+        "esbenp.prettier-vscode",
+        "neilbrayfield.php-docblocker",
+        "bmewburn.vscode-intelephense-client",
+        "recca0120.vscode-phpunit"
+      ]
+    }
+  }
+}
